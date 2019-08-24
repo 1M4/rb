@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Femenino
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Estatales</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item button (click)="goToEstatal('Div. Honor F.', 4)">
+        <ion-ripple-effect></ion-ripple-effect>
+        División de Honor
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="goToEstatal('Div. Honor Plata F.', 5)">
+        <ion-ripple-effect></ion-ripple-effect>
+        División de Honor Plata
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Gallegas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item button (click)="mostrarModal('Primera Autonómica F.', 13)">
+        <ion-ripple-effect></ion-ripple-effect>
+        Primera Autonómica
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="goToGallega('Div. Honor Juvenil F.', '14/1')">
+        <ion-ripple-effect></ion-ripple-effect>
+        División de Honor Juvenil
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="mostrarModal('Segunda Juvenil F.', 15)">
+        <ion-ripple-effect></ion-ripple-effect>
+        Segunda División Juvenil
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="mostrarModal('Div. Honor Cadete F.', 17)">
+        <ion-ripple-effect></ion-ripple-effect>
+        División de Honor Cadete
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="mostrarModal('Segunda Cadete F.', 18)">
+        <ion-ripple-effect></ion-ripple-effect>
+        Segunda División Cadete
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="mostrarModal('Div. Honor Infantil F.', 19)">
+        <ion-ripple-effect></ion-ripple-effect>
+        División de Honor Infantil
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="mostrarModal('Segunda Infantil F.', 21)">
+        <ion-ripple-effect></ion-ripple-effect>
+        Segunda División Infantil
+        <ion-icon md="ios-arrow-forward-outline"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

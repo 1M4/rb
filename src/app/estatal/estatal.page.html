@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment (ionChange)="segmentChanged($event)" value="clas" mode="ios">
+    <ion-segment-button value="clas" layout="icon-start" mode="ios">
+      <ion-icon name="list" ios="md-list"></ion-icon>
+      <ion-label>Clasificación</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="calen" layout="icon-start" mode="ios">
+      <ion-icon name="calendar" ios="md-calendar"></ion-icon>
+      <ion-label>Calendario</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="est" layout="icon-start" mode="ios">
+      <ion-icon name="clipboard" ios="md-clipboard"></ion-icon>
+      <ion-label>Estadísticas</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="section">
+    <div *ngSwitchCase="'clas'">
+      af
+    </div>
+    <div *ngSwitchCase="'calen'">
+      dfgdf
+    </div>
+    <div *ngSwitchCase="'est'">
+      jkljhkgh
+    </div>
+  </div>
+</ion-content>
